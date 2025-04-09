@@ -32,14 +32,15 @@ function App() {
           <Route path="/register" element={<RegisterLogin />} />
 
           {/* ✅ Protected Routes */}
-          <Route
-            path="/bookedDetails"
-            element={
-              <ProtectedRoute>
-                <BookedDetails />
-              </ProtectedRoute>
-            }
-          />
+          // <Route
+          //   path="/bookedDetails"
+          //   element={
+          //     <ProtectedRoute>
+          //       <BookedDetails />
+          //     </ProtectedRoute>
+          //   }
+          // />
+ <Route path="/bookedDetails" element={<BookedDetails />} />
           <Route
             path="/user-dashboard"
             element={
