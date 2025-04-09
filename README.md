@@ -49,7 +49,7 @@ NovaCapture ensures clear communication, reliable scheduling, and an intuitive e
 
 For feedback, support, or business inquiries, please reach out:
 
-📧 Email: [chanduuias@gmail.com](mailto:chandrashekaruias@gmail.com)
+📧 Email: [chandrashekaruias@gmail.com](mailto:chandrashekaruias@gmail.com)
 
 ---
 
