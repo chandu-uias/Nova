@@ -14,7 +14,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://nova-nine-umber.vercel.app"
+    "https://nova-nine-umber.vercel.app",
+    "https://nova-j9db.vercel.app" 
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
