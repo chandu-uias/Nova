@@ -30,7 +30,7 @@ function App() {
           <Route path="/service" element={<ServiceSection />} />
           <Route path="/booknow" element={<BookNow />} />
           <Route path="/register" element={<RegisterLogin />} />
-
+         <Route path="/bookedDetails" element={<BookedDetails />} />
           {/* ✅ Protected Routes */}
           // <Route
           //   path="/bookedDetails"
@@ -40,7 +40,7 @@ function App() {
           //     </ProtectedRoute>
           //   }
           // />
- <Route path="/bookedDetails" element={<BookedDetails />} />
+
           <Route
             path="/user-dashboard"
             element={
