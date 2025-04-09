@@ -1,0 +1,108 @@
+.bd {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.progress h2 {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.progbut {
+  height: 36px;
+  width: 140px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th, td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px 6px;
+  }
+
+  .progress {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .progress h2 {
+    font-size: 20px;
+  }
+
+  .progbut {
+    margin-top: 8px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .progress h2 {
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  .progbut {
+    font-size: 14px;
+    height: 36px;
+  }
+}

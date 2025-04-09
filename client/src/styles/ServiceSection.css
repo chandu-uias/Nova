@@ -1,0 +1,193 @@
+/* ===== DESKTOP STYLES ===== */
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(255, 242, 230) !important;
+    margin: 0;
+    padding: 0;
+}
+
+.service-section {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.buttonservice {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.weddingbutton {
+    border: none;
+    background-color: rgb(255, 242, 230);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 15px;
+    color: black;
+    font-family: italic light;
+    font-style: italic;
+}
+
+.weddingbutton.active {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 12.5rem);
+    gap: 1rem;
+}
+
+.gallery__item {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery__link:hover .gallery__overlay {
+    opacity: 1;
+}
+
+.gallery__link:hover .gallery__image {
+    transform: scale(1.05);
+}
+
+.searchshoot {
+    margin: 20px auto;
+    width: 500px;
+    border-radius: 100px;
+    background-color: #f0f0f0;
+    border: black 2px solid;
+    padding: 10px 20px;
+    display: block;
+}
+
+.location-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 30px;
+}
+
+.threebutton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+    .buttonservice {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    
+    .weddingbutton {
+        font-size: 16px;
+        padding: 8px 12px;
+        flex: 1 0 auto;
+        min-width: 120px;
+        text-align: center;
+    }
+    
+    .wrapper {
+        padding: 1rem;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .gallery__item {
+        height: 250px;
+    }
+    
+    .gallery__overlay {
+        font-size: 1.2rem;
+    }
+    
+    .searchshoot {
+        width: 90%;
+        max-width: 100%;
+        padding: 8px 15px;
+    }
+    
+    .location-images {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 20px;
+    }
+    
+    .threebutton {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+        align-items: center;
+    }
+}
+
+/* Special case for very small screens */
+@media (max-width: 480px) {
+    .weddingbutton {
+        font-size: 14px;
+        padding: 6px 10px;
+        min-width: 100px;
+    }
+    
+    .gallery__item {
+        height: 200px;
+    }
+    
+    .gallery__overlay {
+        font-size: 1rem;
+    }
+}

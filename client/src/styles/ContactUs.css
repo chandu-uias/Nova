@@ -1,0 +1,156 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden; 
+}
+
+
+/* Background section */
+.bgimage {
+  min-height: 100vh;
+  padding-top: 80px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Photographer info section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Details text block */
+.about-details {
+  flex: 1;
+  padding-right: 20px;
+  min-width: 280px;
+}
+
+.about-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details .detail {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.detail strong {
+  font-weight: bold;
+}
+
+/* Photographer image block */
+.photographer-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Social media icons */
+.whatsapp-logo,
+.insta-logo,
+.face-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsapp-logo:hover,
+.insta-logo:hover,
+.face-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Other collections carousel */
+.other-collections {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.h2other {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.slider-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.carouselimg {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-details {
+    padding: 0;
+    text-align: center;
+  }
+
+  .photographer-image img {
+    margin: 20px auto;
+  }
+
+  .slider-container {
+    width: 95%;
+  }
+
+  .carouselimg {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-details h2 {
+    font-size: 20px;
+  }
+
+  .detail {
+    font-size: 15px;
+  }
+
+  .whatsapp-logo,
+  .insta-logo,
+  .face-logo {
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+  }
+
+  .photographer-image img {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

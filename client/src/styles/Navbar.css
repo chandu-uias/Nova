@@ -1,0 +1,184 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgb(254, 232, 213);
+    padding: 10px 0;
+    z-index: 1000;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .containernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 40px;
+    margin-top: -6px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .logo-text {
+    color: rgb(80, 41, 1);
+    margin-left: 5px;
+    font-size: 13px;
+    font-family: bold light italic;
+    font-style: italic;
+    font-weight: bolder;
+    position: relative;
+    top: -25px;
+  }
+  
+  /* Desktop nav links */
+  .nav-links {
+    display: none;
+  }
+  
+  /* Register/Login and BookNow */
+  .register-book-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .register-book-container .nav-link {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .register-book-container .nav-link:hover {
+    background-color: rgb(237, 167, 97);
+    color: white;
+  }
+  
+  /* Logout button */
+  .logout-link {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .logout-link:hover {
+    background-color: rgb(237, 167, 97);
+    color: white;
+    border-radius: 6px;
+  }
+  
+  /* Hamburger menu icon */
+  .menu-bar {
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  
+  .menu-bar span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  .close-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Mobile nav menu */
+  .mobile-nav {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: rgb(255, 245, 235);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    z-index: 1000;
+    width: 180px;
+  }
+  
+  .mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .mobile-nav-list .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(80, 41, 1);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: right;
+  }
+  
+  .mobile-nav-list .nav-link:hover,
+  .mobile-nav-list .nav-link.active {
+    background-color: rgb(237, 167, 97);
+    color: white;
+  }
+  
+  /* Responsive visibility */
+  @media screen and (min-width: 768px) {
+    .menu-bar {
+      display: none !important;
+    }
+  
+    .mobile-nav {
+      display: none !important;
+    }
+  
+    .nav-links {
+      display: flex !important;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nav-links .nav-link {
+      font-size: 14px;
+      color: black;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-links .nav-link:hover,
+    .nav-links .nav-link.active {
+      background-color: rgb(237, 167, 97);
+      color: white;
+    }
+  
+    .register-book-container {
+      display: flex !important;
+      gap: 12px;
+      align-items: center;
+    }
+  }
+  

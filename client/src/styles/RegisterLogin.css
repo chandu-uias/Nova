@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+  padding: 0;
+  
+ 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+@media only screen and (max-width: 768px) {
+    .bgimage {
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-size: 100% 100%; 
+    }
+  }
+  
+  /* Mobile view */
+  @media only screen and (max-width: 480px) {
+    .bgimage {
+      background-size: contain; 
+      background-repeat: no-repeat; 
+      background-size: 100% 100%; 
+    }
+}
+.form-wrapper {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: auto;
+    text-align: center;
+}
+.loginbutton{
+    margin-left:130px;
+    width:80px;
+    margin-top:15px;   
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+button {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #007bff;
+   
+}
+.passreg{
+    margin-top:-100px !important;
+    margin-bottom:20px;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.loginh2{
+    margin-bottom:20px;
+    font-family: light italic;
+}
+
+.passinput{
+    margin-top: -100px;
+}
+.switch-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:18px;
+    background-color: #28a745;
+    font-weight: bold;
+}
+
+.switch-button:hover {
+    background-color: #218838;
+}
+
+.link {
+    color: #ebeee9;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top:10px;
+    font:bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+    
+}
+.emailinputemail{
+    position: relative;
+    top:-200px;
+    margin-bottom:30px;
+}
+.text-danger{
+    color:red;
+}
+.success-message{
+    color:green;
+    text-align: center;
+    font-family: italic light;
+}
+.error-message{
+    color:red;
+    text-align: center;
+    font-family: italic light;
+}
