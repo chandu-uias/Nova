@@ -65,6 +65,7 @@ function RegisterLogin() {
         const token = res.data.token;
         console.log("User token: ", token);
         login(token); // ✅ same context login
+        console.log("Navigating to bookedDetails...");
         setLoginSuccessMessage(res.data.message || 'Admin login successful');
         setTimeout(() => navigate('/bookedDetails'), 1000);
       } catch (err) {
