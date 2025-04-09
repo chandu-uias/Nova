@@ -41,14 +41,14 @@ function App() {
           //   }
           // />
 
-          <Route
-            path="/user-dashboard"
-            element={
-              <ProtectedRoute>
-                {/* <UserDashboard /> */}
-              </ProtectedRoute>
-            }
-          />
+          // <Route
+          //   path="/user-dashboard"
+          //   element={
+          //     <ProtectedRoute>
+          //       {/* <UserDashboard /> */}
+          //     </ProtectedRoute>
+          //   }
+          // />
 
           <Route path="/piechart" element={<PieChart />} />
         </Routes>
