@@ -32,23 +32,23 @@ function App() {
           <Route path="/register" element={<RegisterLogin />} />
          <Route path="/bookedDetails" element={<BookedDetails />} />
           {/* ✅ Protected Routes */}
-          // <Route
-          //   path="/bookedDetails"
-          //   element={
-          //     <ProtectedRoute>
-          //       <BookedDetails />
-          //     </ProtectedRoute>
-          //   }
-          // />
+           <Route
+             path="/bookedDetails"
+             element={
+               <ProtectedRoute>
+             <BookedDetails />
+               </ProtectedRoute>
+             }
+           />
 
-          // <Route
-          //   path="/user-dashboard"
-          //   element={
-          //     <ProtectedRoute>
-          //       {/* <UserDashboard /> */}
-          //     </ProtectedRoute>
-          //   }
-          // />
+         <Route
+           path="/user-dashboard"
+           element={
+             <ProtectedRoute>
+               {/* <UserDashboard /> */}
+             </ProtectedRoute>
+           }
+           />
 
           <Route path="/piechart" element={<PieChart />} />
         </Routes>
