@@ -42,8 +42,8 @@ NovaCapture ensures clear communication, reliable scheduling, and an intuitive e
 
 ## 📦 Deployment
 
-- **Frontend**: [NovaCapture Frontend (Vercel)](https://nova-j9db.vercel.app/)
-- **Backend**: Deployed on Render (or specify if using another service)
+- **Demo**: [NovaCapture Frontend (Vercel)](https://nova-j9db.vercel.app/)
+
 
 ## 📫 Contact
 
